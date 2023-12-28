@@ -3363,7 +3363,7 @@
     (property "Reference" "U" (at 3.81 -16.51 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "" (at 0 0 0)
+    (property "Value" "MP2760" (at 0 0 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "" (at 0 0 0)
@@ -4970,7 +4970,7 @@
         (name "V_{IN}" (effects (font (size 1.27 1.27))))
         (number "A2" (effects (font (size 1.27 1.27))))
       )
-      (pin passive line (at 8.89 2.54 180) (length 2.54)
+      (pin passive line (at 8.89 0 180) (length 2.54)
         (name "I_{LIM}" (effects (font (size 1.27 1.27))))
         (number "A3" (effects (font (size 1.27 1.27))))
       )
@@ -4978,12 +4978,12 @@
         (name "~{FLT}" (effects (font (size 1.27 1.27))))
         (number "A4" (effects (font (size 1.27 1.27))))
       )
-      (pin power_out line (at 8.89 5.08 180) (length 2.54)
-        (name "V_{BUS}" (effects (font (size 1.27 1.27))))
+      (pin passive line (at 8.89 5.08 180) (length 2.54)
+        (name "VCP" (effects (font (size 1.27 1.27))))
         (number "B1" (effects (font (size 1.27 1.27))))
       )
-      (pin power_out line (at 8.89 5.08 180) (length 2.54) hide
-        (name "V_{BUS}" (effects (font (size 1.27 1.27))))
+      (pin passive line (at 8.89 5.08 180) (length 2.54) hide
+        (name "VCP" (effects (font (size 1.27 1.27))))
         (number "B2" (effects (font (size 1.27 1.27))))
       )
       (pin power_in line (at 8.89 -5.08 180) (length 2.54)
@@ -4994,9 +4994,13 @@
         (name "EN" (effects (font (size 1.27 1.27))))
         (number "B4" (effects (font (size 1.27 1.27))))
       )
-      (pin power_out line (at 8.89 5.08 180) (length 2.54) hide
-        (name "V_{BUS}" (effects (font (size 1.27 1.27))))
+      (pin passive line (at 8.89 5.08 180) (length 2.54) hide
+        (name "VCP" (effects (font (size 1.27 1.27))))
         (number "C1" (effects (font (size 1.27 1.27))))
+      )
+      (pin power_out line (at 8.89 2.54 180) (length 2.54)
+        (name "V_{BUS}" (effects (font (size 1.27 1.27))))
+        (number "C2" (effects (font (size 1.27 1.27))))
       )
       (pin power_in line (at 8.89 -5.08 180) (length 2.54) hide
         (name "GND" (effects (font (size 1.27 1.27))))
@@ -5005,6 +5009,14 @@
       (pin passive line (at -8.89 -2.54 0) (length 2.54)
         (name "FO" (effects (font (size 1.27 1.27))))
         (number "C4" (effects (font (size 1.27 1.27))))
+      )
+      (pin power_out line (at 8.89 2.54 180) (length 2.54) hide
+        (name "V_{BUS}" (effects (font (size 1.27 1.27))))
+        (number "D1" (effects (font (size 1.27 1.27))))
+      )
+      (pin power_out line (at 8.89 2.54 180) (length 2.54) hide
+        (name "V_{BUS}" (effects (font (size 1.27 1.27))))
+        (number "D2" (effects (font (size 1.27 1.27))))
       )
       (pin power_in line (at 8.89 -5.08 180) (length 2.54) hide
         (name "GND" (effects (font (size 1.27 1.27))))
